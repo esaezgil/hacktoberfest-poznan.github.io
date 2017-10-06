@@ -2,7 +2,6 @@
 ### Example user template template
 ### Example user template
 /node_modules
-/dist
 deploy_key.enc
 
 # IntelliJ project files
