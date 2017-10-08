@@ -1,25 +1,26 @@
-# Hacktoberfest Poznań 2017
+# Hacktoberfest Barcelona 2017
 
 ## About event
-Hacktoberfest is an annual event across all of GitHub which is meant to encourage developers to contribute to open source projects.
-As a couple of guys amazed by open source projects, we decided to organise a meetup for this event in Poznań.
-Whether it's your first step in open source or you already maintain your major project for several years, join us and let's hack for Hacktoberfest together.
+Hacktoberfest is an annual event across the world to encourage developers to contribute to open source projects.
+
+Join us, give back to open source, meet fellow open source enthusiasts and enjoy a nice evening.
+
+Whether it's your first step in open source or a maintainer of a major project join us and let's hack for Hacktoberfest together.
 
 ## When
-14th of October (Saturday)
+26th of October
 
 ## Where
-Wojskowa 4
-Poznań, Poland
+Skyscanner office
+Placa Catalunya 1, 5th floor
+Barcelona
 
 ### Join as a Maintainer
-Of you maintain Open Source projects on GitHub, join us as a Maintainer and give a pitch or speech on our meetup. Just leave us a message or tell us on the beginning of the event.
+If you maintain any open source project feel free to join our event as a Maintainer.
 
 ### Contact
-team@hacktoberfest.pl
+BarcelonaTechEvents@skyscanner.net
 
-* Website - [hacktoberfest.pl](https://hacktoberfest.pl)
-* Facebook - [Hacktoberfest](https://facebook.com/hacktoberfest)
-* Tickets - [Eventbrite](https://www.eventbrite.com/e/hacktoberfest-in-poznan-tickets-38398144885)
-* Gitter - [hacktoberfest-poznan](https://gitter.im/hacktoberfest-poznan/Lobby)
-* Main Event Website - [hacktoberfest.digitalocean.com](https://hacktoberfest.digitalocean.com)
+* Website - [hacktoberfestbarcelona.com](https://hacktoberfestbarcelona.com)
+* Tickets - [Eventbrite](https://www.eventbrite.com/e/hacktoberfest-barcelona-tickets-38664528646)
+* Worlwide Event Website - [hacktoberfest.digitalocean.com](https://hacktoberfest.digitalocean.com)
