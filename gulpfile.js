@@ -16,6 +16,7 @@ var gulp = require('gulp'),
 
     paths = {
         html: "./src/index.html",
+        css: "./src/css/**/*",
         scss: "./src/scss/**/*.scss",
         js: "./src/js/**/*",
         images: "./src/assets/**/*"
@@ -71,7 +72,15 @@ gulp.task('copy', function () {
     ]).pipe(gulp.dest(dest));
 });
 
-var ghPages = require('gulp-gh-pages');
+gulp.task('copy_css', function () {
+    return gulp.src(paths.css)
+        .pipe(gulp.dest(dest + '/css/'))
+
+});
+gulp.task('copy_js', function () {
+  return gulp.src(paths.js)
+      .pipe(gulp.dest(dest + '/js/'))
+});
 
 gulp.task('deploy', function () {
     var options = {
@@ -82,7 +91,7 @@ gulp.task('deploy', function () {
 });
 
 gulp.task('default', ['styles', 'minify', 'scripts', 'imagemin', 'copy'], function () {
-    gulp.watch([paths.scss, paths.html, paths.js], ['styles', 'minify', 'scripts']);
+    gulp.watch([paths.scss, paths.html, paths.js, paths.css], ['styles', 'minify', 'scripts']);
 });
 
-gulp.task('build', ['styles', 'minify', 'scripts', 'imagemin', 'copy']);
+gulp.task('build', ['styles', 'minify', 'scripts', 'imagemin', 'copy', 'copy_css', 'copy_js']);

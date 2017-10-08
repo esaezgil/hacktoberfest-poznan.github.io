@@ -67,6 +67,7 @@ section .subtitle {
 .box.speaker {
   box-shadow: none;
   .media {
+    justify-content: center;
     @media screen and (max-width: 992px) {
       display: block;
       figure {

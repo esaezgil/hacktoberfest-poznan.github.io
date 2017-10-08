@@ -14,21 +14,31 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-107368470-1'); -->
-    </script>
+    <!-- </script> -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./js/jquery.countdown.js"></script>
+    <link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hacktoberfest | 26 Oct 2017, Barcelona</title>
     <meta name="description"
-          content="Hacktoberfest is an annual event across all of GitHub which is meant to encourage developers to contribute to open source projects.">
+          content="Celebrate Hacktoberfest in Barcelona with us. Hacktoberfest is an annual event across the world encouraging developers to contribute to open source projects.">
     <meta name="google-site-verification" content="w1l-16SXQaUk-1AXtCH4_WBX5FOA1Z2Wgw17R0KDxQo"/>
 
-    <meta property="og:url" content="https://hacktoberfest.pl"/>
+    <meta property="og:url" content="https://hacktoberfestbarcelona.com"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Hacktoberfest | 26 Oct 2017 Barcelona"/>
     <meta property="og:description"
-          content="Hacktoberfest is an annual event across all of GitHub which is meant to encourage developers to contribute to open source projects."
+          content="Celebrate Hacktoberfest in Barcelona with us. Hacktoberfest is an annual event across the world encouraging developers to contribute to open source projects."
     />
-    <meta property="og:image" content="https://hacktoberfest.pl/assets/cover.jpg"/>
+    <meta property="og:image" content="https://esaezgil.com/hacktoberfestbcn.github.io/assets/cover.jpg"/>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
@@ -75,10 +85,21 @@
                     <a href="#sponsors" class="nav-item">
                         Sponsors
                     </a>
-                    <a class="nav-item is-hidden-mobile" href="#twitter">
-              <span class="icon">
-                <i class="fa fa-twitter"></i>
-              </span>
+                    <a href="#organizers" class="nav-item">
+                        Organizers
+                    </a>
+                    <a class="nav-item" href="#twitter">
+                      <span class="icon">
+                        <i class="fa fa-twitter"></i>
+                      </span>
+                    </a>
+                    <a href="#newsletter" class="nav-item">
+                        Newsletter
+                    </a>
+                    <a class="nav-item" href="https://twitter.us16.list-manage.com/subscribe/post?u=13c0c701f367206a35d99b8ea&id=a3679daf12">
+                      <span class="icon">
+                        <i class="fa fa-bullhorn"></i>
+                      </span>
                     </a>
                 </div>
             </div>
@@ -119,7 +140,7 @@
                 Join us, give back to open source, meet fellow open source enthusiasts and <b>enjoy</b> a nice evening.
             </p>
             <p>
-                Whether it's your first step in open source or you already maintain a major project
+                Whether it's your first step in open source or a maintainer of a major project
                 join us and let's
                 hack for Hacktoberfest together.
             </p>
@@ -138,7 +159,11 @@
                 <td>18:30</td>
             </tr>
             <tr>
-              <td>Let's chat (or keep hacking!) over Pizza and drinks</td>
+                <td>Start hacking!</td>
+                <td>18:45</td>
+            </tr>
+            <tr>
+              <td>Let's chat (or keep hacking!) over pizza and drinks</td>
               <td>20:30</td>
             </tr>
             <tr>
@@ -205,17 +230,34 @@
 <section class="section" id="tickets">
     <div class="container">
         <h2 class="title is-2">Get a ticket  <i class="fa fa-calendar-check-o fa-2x"></i></h2>
-        <p class="subtitle is-4 has-text-centered">
+          <p class="subtitle is-4 has-text-centered">
             Tickets are free but spots are limited!<br>
             <br>
+          </p>
+            <p class="subtitle is-4 has-text-centered">
             <a class="button button is-secondary-button is-hero-button"
-               href="https://www.eventbrite.com/e/hacktoberfest-in-poznan-tickets-38398144885"
+               href="https://www.eventbrite.com/e/hacktoberfest-barcelona-tickets-38664528646"
                target="_blank">
-                Get a Ticket
+                Get your Ticket now
             </a>
-        </p>
-    </div>
+          </p>
+          <h2 class="title is-3 has-text-centered">
+            <div class="container" id="getting-started"></div>
+          </h2>
+  </div>
 </section>
+
+<script type="text/javascript">
+  $("#getting-started")
+  .countdown("2017/10/26", function(event) {
+    $(
+      this).text(
+
+      event.strftime('%D days %Hh %Mm %S\'\'')
+    );
+  });
+</script>
+
 <section class="section" id="location">
     <div class="container">
         <h2 class="title is-2">Where? <i class="fa fa-map-marker fa-2x"></i> </h2>
@@ -229,7 +271,7 @@
 </section>
 <section class="section" id="sponsors">
     <div class="container">
-        <h2 class="title is-2"><i class="fa fa-heart-o fa-2x"></i> Sponsors <i class="fa fa-heart-o fa-2x"></i></h2>
+        <h2 class="title is-2"><i class="fa fa-heart-o fa-1x"></i> Sponsors <i class="fa fa-heart-o fa-1x"></i></h2>
         <p class="subtitle is-4 has-text-centered">
             <a href="https://skyscanner.net"><img src="./assets/skyscanner-logo.svg" class="logo-header"></a>
         </p>
@@ -247,6 +289,111 @@
     </div>
 </section>
 
+<section class="section" id="organizers">
+    <div class="container">
+        <h2 class="title is-2">Organizers</h2>
+        <div class="subtitle has-text-centered">
+
+          <table class="table is-fullwidth">
+            <colgroup>
+              <col span="3">
+            </colgroup>
+              <tbody>
+              <tr>
+                <td>
+                <!-- Enrique -->
+                <div class="box speaker">
+                    <article class="media-center">
+                        <div class="media">
+                            <figure class="image is-128x128">
+                                <img src="./assets/organizers/enrique_saez.jpg" alt="Enrique Saez">
+                            </figure>
+                        </div>
+                </div>
+                        <div class="has-text-centered">
+                            <div>
+                                <p>
+                                    <strong>Enrique Saez</strong>
+                                </p>
+                            </div>
+                            <div>
+                                      <div>
+                                        <p>
+                                          <small><a href="https:/twitter.com/eqirn"><i
+                                                  class="fa fa-twitter"></i></a></small>
+                                          <small><a href="https:/esaezgil.com/about/" target="_blank"><i
+                                                  class="fa fa-link"></i></a></small>
+                                        </p>
+                                      </div>
+                            </div>
+                        </div>
+                    </article>
+                </td>
+                <td>
+                <!-- Person 1 -->
+                <div class="box speaker">
+                    <article class="media-center">
+                        <div class="media">
+                            <figure class="image is-128x128">
+                                <img src="./assets/organizers/aleksander.lorenc.jpg" alt="Person 1">
+                            </figure>
+                        </div>
+                </div>
+                        <div class="has-text-centered">
+                            <div>
+                                <p>
+                                    <strong>Person 2</strong>
+                                </p>
+                            </div>
+                            <div>
+                                      <div>
+                                        <p>
+                                          <small><a href="https:/twitter.com/eqirn"><i
+                                                  class="fa fa-twitter"></i></a></small>
+                                          <small><a href="https:/esaezgil.com"><i
+                                                  class="fa fa-link"></i></a></small>
+                                        </p>
+                                      </div>
+                            </div>
+                        </div>
+                    </article>
+                </td>
+                <td>
+                <!-- Enrique -->
+                <div class="box speaker">
+                    <article class="media-center">
+                        <div class="media">
+                            <figure class="image is-128x128">
+                                <img src="./assets/organizers/aleksander.lorenc.jpg" alt="Person 2">
+                            </figure>
+                        </div>
+                </div>
+                        <div class="has-text-centered">
+                            <div>
+                                <p>
+                                    <strong>Person 2</strong>
+                                </p>
+                            </div>
+                            <div>
+                                      <div>
+                                        <p>
+                                          <small><a href="https:/twitter.com/eqirn"><i
+                                                  class="fa fa-twitter"></i></a></small>
+                                          <small><a href="https:/esaezgil.com"><i
+                                                  class="fa fa-link"></i></a></small>
+                                        </p>
+                                      </div>
+                            </div>
+                        </div>
+                    </article>
+                </td>
+              </tbody>
+          </table>
+
+        </div>
+    </div>
+</section>
+
 <div id="map"></div>
 
 <section class="section" id="twitter">
@@ -254,11 +401,40 @@
         <div class="content has-text-centered">
           <h2 class="title is-2"><i class="fa fa-twitter"></i> Timeline <i class="fa fa-twitter"></i></h2>
           <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/hacktoberfest" data-widget-id="916066628118425600">#hacktoberfestbcn Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-</div>
-</div>
+        </div>
+      </div>
 </section>
+
+<section class="section" id="newsletter">
+    <div class="container">
+        <h2 class="title is-2"> <i class="fa fa-envelope-o fa-1x"></i>  Newsletter <i class="fa fa-envelope-o fa-1x"></i> </h2>
+    </div>
+        <!-- <p class="subtitle is-4 has-text-centered"> -->
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+        <form action="https://twitter.us16.list-manage.com/subscribe/post?u=13c0c701f367206a35d99b8ea&amp;id=a3679daf12" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+        	<label for="mce-EMAIL">Keep up to date with the latests events sponsored by Skyscanner in Barcelona.</label>
+        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_13c0c701f367206a35d99b8ea_a3679daf12" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+      </div>
+      <!-- <div class="container"> -->
+        <div class="content has-text-centered">
+          <a href="https://twitter.us16.list-manage.com/subscribe/post?u=13c0c701f367206a35d99b8ea&id=a3679daf12">
+            <i class="fa fa-bullhorn fa-4x"></i>
+          </a>
+        </div>
+      <!-- </div> -->
+</section>
+
+        <!--End mc_embed_signup-->
+        <!-- </p> -->
 
 <footer class="footer">
     <div class="container">
@@ -274,8 +450,8 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/cash-dom@1.3.5/dist/cash.min.js"></script>
 <script src="./js/bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cash-dom@1.3.5/dist/cash.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGFfinjgJzw-Qo-Ju86IUXBt7E39l06Pc"
         type="text/javascript"></script>
 <script type="text/javascript">
