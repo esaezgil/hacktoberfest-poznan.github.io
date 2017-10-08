@@ -84,6 +84,23 @@ section .subtitle {
   }
 }
 
+.box.sponsor {
+  box-shadow: none;
+  .media {
+    justify-content: center;
+    @media screen and (max-width: 992px) {
+      display: block;
+      figure {
+        margin: 0 auto 20px auto;
+      }
+      .content small {
+        margin-bottom: -15px;
+        display: block;
+      }
+    }
+  }
+}
+
 .logo {
   font-size: 1.5em;
   font-weight: bold;
