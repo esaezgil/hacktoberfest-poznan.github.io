@@ -77,10 +77,6 @@ gulp.task('copy_css', function () {
         .pipe(gulp.dest(dest + '/css/'))
 
 });
-gulp.task('copy_js', function () {
-  return gulp.src(paths.js)
-      .pipe(gulp.dest(dest + '/js/'))
-});
 
 gulp.task('deploy', function () {
     var options = {
@@ -94,4 +90,4 @@ gulp.task('default', ['styles', 'minify', 'scripts', 'imagemin', 'copy'], functi
     gulp.watch([paths.scss, paths.html, paths.js, paths.css], ['styles', 'minify', 'scripts']);
 });
 
-gulp.task('build', ['styles', 'minify', 'scripts', 'imagemin', 'copy', 'copy_css', 'copy_js']);
+gulp.task('build', ['styles', 'minify', 'scripts', 'imagemin', 'copy', 'copy_css']);
