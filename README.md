@@ -8,7 +8,7 @@ Join us, give back to open source, meet fellow open source enthusiasts and enjoy
 Whether it's your first step in open source or a maintainer of a major project join us and let's hack for Hacktoberfest together.
 
 ## When
-26th of October
+25th of October
 
 ## Where
 Skyscanner office
