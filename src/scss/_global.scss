@@ -114,6 +114,16 @@ section .subtitle {
   margin: auto;
 }
 
+.logo-organizer {
+  max-width: 20em;
+  margin: auto;
+  img {
+    max-width: 3.5em;
+    width: 100%;
+    height: auto;
+  }
+}
+
 .has-primary-color {
   border-color: $color-red;
   color: $color-red;
